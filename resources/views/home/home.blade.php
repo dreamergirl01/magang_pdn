@@ -1,7 +1,7 @@
 @extends('home.templade')
 
 @section('tittle')
-    Halaman Home
+    Home
 @endsection
 
 @section('content')
