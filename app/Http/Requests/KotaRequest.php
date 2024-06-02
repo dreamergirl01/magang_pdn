@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class LoginRequest extends FormRequest
+class KotaRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -22,17 +22,16 @@ class LoginRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'email' => 'required|email',
-            'password' => 'required|min:8'
+            'id_provinsi' => 'required',
+            'nama_kota' => 'required'
         ];
     }
+
     public function messages():array
     {
-        return [
-            'email.required' => 'Email Tidak Boleh Kosong',
-            'email.email' => 'Pastikan Yang Dimasukkan Berupa Email',
-            'password.min' => 'Minimal Password 8 Digit',
-            'password.required' => 'Password Tidak boleh Kosong'
+        return[
+            'id_provinsi.required' => 'Data harus diinputkan',
+            'nama_kota.required' => 'Data harus diinputkan'
         ];
     }
 }

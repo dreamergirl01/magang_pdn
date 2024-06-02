@@ -38,4 +38,10 @@ class AuthController extends Controller
             return redirect('/')->with('pesan', 'Registrasi Berhasil');
         }
     }
+
+    public function logout(){
+        Auth::logout();
+
+        return redirect('/');
+    }
 }
