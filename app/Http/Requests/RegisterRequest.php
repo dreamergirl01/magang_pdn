@@ -33,7 +33,7 @@ class RegisterRequest extends FormRequest
             'email.required' => 'Email Tidak Boleh Kosong',
             'email.email' => 'Pastikan Yang Dimasukkan Berupa Email',
             'password.min' => 'Minimal Password 8 Digit',
-            'password.required' => 'Password Tidak boleh Kosong'
+            'password.required' => 'Password Tidak boleh Kosong',
         ];
     }
 }

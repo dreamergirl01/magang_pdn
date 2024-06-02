@@ -10,6 +10,7 @@
         <div>
             <a href="{{ route('tambah') }}" class="bg-blue-500 hover:bg-blue-300 text-white p-2 border rounded-md">Tambah
                 Data</a>
+            <a href="{{ route('logout') }}" class="bg-blue-500 hover:bg-blue-300 text-white p-2 border rounded-md">Logout</a>
         </div>
     </div>
 
